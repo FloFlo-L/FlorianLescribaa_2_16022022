@@ -1,0 +1,631 @@
+body{
+    font-family: 'Raleway', sans-serif; 
+}
+
+main{
+    
+    margin: 15px 30px 0px 30px;
+}
+
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    
+}
+
+.logo img{
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;   
+    margin: 0px; 
+}
+
+nav li{
+    padding-top: 40px;  
+    margin: 0px 20px 0px 20px; 
+    padding: 50px 25px; 
+}
+
+nav a{
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+
+}
+
+nav li a:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 38px;
+}
+
+/* search bar */
+
+.search{
+    margin-bottom: 30px;
+}
+
+.search h2{
+    margin-bottom: 10px;
+}
+
+.search p{
+    margin-top: 10px;
+}
+
+.searchBar{
+    margin-bottom: 30px;
+    height: 50px;
+    display: flex;
+    
+}
+
+.containerIcon{
+    background-color: #F2F2F2;
+    border-radius: 20px 0 0 20px;
+    width: 50px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    
+}
+
+.searchInput{
+    width: 230px;
+    font-weight: 700; /* épaisseur gras */
+    border: 1px solid #F2F2F2;
+    padding-left: 15px;
+    outline: none;
+}
+
+.searchInput::placeholder{
+    color: black;
+}
+
+.searchButton{
+    border-radius: 0px 20px 20px 0px;
+    padding: 15px;
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    color: white;
+    font-weight: 700;
+}
+
+.searchButton .fa-search{
+    display: none;
+}
+
+/* Filtres */
+
+.Filtres{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.TextFiltres{
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.Filtre{
+    align-items: center;
+    border: 2px solid #f2f2f2;
+    border-left: none;
+    margin-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+
+.ListFiltres{
+    display: flex;
+}
+
+.IconFiltres span{
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.IconFiltres i{
+    background-color: #DEEBFF;
+    padding: 15px;
+    border-radius: 100%;
+    color: #0065FC;
+
+}
+
+.IconFiltre{
+    margin: 0%;
+}
+
+.Filtre:hover{
+    color: #0065FC;
+    border: 2px solid #0065FC;
+}
+
+/* Informations */
+
+.Info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.IconInfo{
+    text-align: center;
+    border: 2px solid #F2F2F2;
+    width: 20px;
+    height: 20px;
+    color: #0065FC;
+    border-radius: 100%;
+    padding: 4px
+}
+
+.TextInfo{
+    margin-left: 10px;
+}
+
+/* Hotels & populaires */
+.HoteletPopu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    width: 100%;
+    
+}
+/* hotels */
+
+.Hotels{
+    background-color:#F2F2F2;
+    border-radius: 20PX;
+    padding: 20px;
+    width: 60%;
+
+    
+}
+
+.TextHotels{
+    font-weight: 600;
+    margin: 10px 0px 25px 20px;
+    
+}
+
+.TextMore{
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+
+.ListHotels{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ListHotels a{
+    text-decoration: none;
+    color: black;
+    width: 30%;
+    margin-bottom: 60px;
+    
+    
+}
+
+.ListHotels a:hover{
+    box-shadow: 5px 5px 5px 0px #E2E2E2;
+    border-radius: 25px;
+}
+
+.Card{
+    background-color: white;
+    padding: 6px;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.Card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+    
+}
+
+.Description{
+    margin-left: 10px;
+    flex-direction: column;
+}
+
+
+
+.NameHotel{
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.Description p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.PriceHotel{
+    font-weight: 600;
+}
+
+.blueStar{
+    color: #0065FC;
+}
+
+.greyStar{
+    color: #f2f2f2;
+}
+
+
+
+/* populaire */
+.Popu{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 0px 20px 20px 20px;
+    width: 30%;
+
+}
+
+.TitlePopu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 50px 5px 0px;
+}
+
+
+.TextPopu{
+    margin: 30px 0px 20px 30px;
+}
+
+
+.ListPopu{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ListPopu a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    margin-bottom: 60px;
+    
+}
+
+.ListPopu a:hover{
+    box-shadow: 5px 5px 5px 0px #E2E2E2;
+    border-radius: 25px;
+   
+}
+
+.NamePopu{
+    font-weight: 600;
+    margin: 5px;
+}
+
+.p{
+    margin-left: 5px;
+}
+
+.StarsPopu{
+    justify-self: end;
+    margin-left: 5px;
+}
+
+.CardPopu{
+    background-color: white;
+    padding: 6px;
+    border-radius: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.CardPopu img{
+    border-radius: 25px 0px 0px 25px;
+    width: 35%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.DescriptionPopu{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Activités */
+
+#activity {
+    margin-bottom: 60px;
+ 
+}
+
+.ListActivities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 600px;
+}
+
+
+.column{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+    
+}
+
+.column a{
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.double a{
+    height: 48%;
+}
+
+.CardActivity img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.double .CardActivity img{
+    height: 80%;
+}
+
+.CardActivity{
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    border-radius: 25px;
+}
+
+.CardActivity h3 {
+    padding: 21px;
+    margin: 0px;
+}
+
+
+
+
+
+/* footer */
+
+footer{
+    background-color: #F2F2F2;
+    
+}
+
+footer p.title_footer{
+    font-weight: bold;
+}
+
+#footer{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+#footer div{
+    margin-right: 200px;  
+}
+
+
+
+
+/* responsive tablette */
+
+@media only screen and (max-width: 992px){
+    
+
+    /* filtres */
+    .Filtres{
+        flex-wrap: wrap;
+    }
+
+    .ListFiltres{
+        flex-wrap: wrap;
+    }
+
+    .Filtre{
+        margin-top: 10px;
+    }
+    /* hotels et populaire */
+    .HoteletPopu{
+        flex-direction: column;
+    }
+
+    .Popu{
+        width:auto;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .Hotels{
+        width: auto;
+        order: 2;
+    }
+    /* activités */
+    .ListActivities{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .column {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    
+
+    
+    /* footer */
+    #footer {
+        justify-content: space-between;
+    }
+    
+}
+
+
+
+
+
+
+/* respnsive phone*/
+
+@media only screen and (max-width: 768px){
+
+    /* header */
+
+    header{
+        flex-direction: column;
+    }
+
+    header .logo{
+        margin-bottom: 20px; 
+        margin-left: 110px;     
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        margin: 0px -20px;
+    }
+    
+   
+    header nav ul li {
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+        margin: 0px;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    header nav ul li:hover {
+        border-bottom: 2px solid #0065FC;
+    }
+
+    header nav ul li a:hover{
+        border: none;
+    }
+
+    /* formulaire de recherche */
+
+    .searchButton span{
+        display: none;
+    }
+    .searchButton .fa-search{
+        display: block;
+    }
+
+    /* filtres */
+    .Filtres{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ListFiltres{
+        flex-wrap: wrap;
+    }
+
+    .Filtre{
+        margin-top: 10px;
+    }
+
+    /* hôtels et populaire */
+
+    .HoteletPopu{
+        flex-direction: column;
+    }
+
+
+    .Popu{
+        order: 1;
+        border-radius: 0px;
+        margin-bottom: 30px;
+        width: auto;
+    }
+
+    .Hotels{
+        order: 2;
+        border-radius: 0px;
+        width: auto;
+    }
+
+    .ListHotels{
+        flex-direction: column; 
+    }
+    .ListPopu{
+        flex-direction: column;
+        
+    }
+    .ListPopu a{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .ListPopu img{
+        width: 45%;
+    }
+    .ListHotels a{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    /* Activités */
+
+    .ListActivities{
+        flex-direction: column;
+    }
+    
+    .column{
+        width: 100%;
+    }
+
+    .double .CardActivity{
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .column .CardActivity{
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .column .CardActivity img{
+        height: 150px; 
+    }
+
+    .double .CardActivity img{
+        height: 150px; 
+    }
+    /* footer */
+    #footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+}
